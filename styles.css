@@ -11,11 +11,8 @@ body{
     display: flex;
     justify-content: space-around;
     margin: 60px auto;
-    /* background-color: #EFF3F8; */
-
 }
 .container-noticias, .noticias{
-    /* background-color: #F8F9FA; */
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
 h2{
@@ -31,11 +28,9 @@ aside{
     max-width: 40%;
     display: flex;
     flex-direction: column;
-
 }
 aside div{
     margin-bottom: 1px;
-    /* background-color: #F8F9FA; */
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
 .container-sistemas{
@@ -45,8 +40,6 @@ aside div{
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
-
-
 }
 .container-sistemas div{
     padding: 20px 15px;
@@ -55,12 +48,10 @@ aside div{
     justify-content: center;
     border-radius: 5px;
     margin: 10px;
-
 }
 .container-noticias{
     max-width: 58%;
     background-color: #F8F9FA;
-
 }
 .container-sistemas div p{
     font-size: 11px;
@@ -103,7 +94,7 @@ aside div{
 }
 
 .aniversario div{
-    width: 100%;
+    
     display: flex;
     background-color: #F8F9FA;
     border: none;
@@ -126,12 +117,10 @@ aside div{
 }
 .email{
     font-weight:400;
-
     margin-top: 5px;
 }
 .data{
     color: #6c757d!important;
-
     font-weight: 400px;
 }
 
@@ -149,13 +138,11 @@ aside div{
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 16px 8px;
-
 }
 
 .noticias-card  {
     display: flex;
     padding: 15px 8px;
-
 }
 
 figure img {
@@ -202,18 +189,17 @@ figure img {
     }
     aside{
         max-width: 100%;
-
+        margin-top: 15px;
     }
     .container-sistemas div{
         flex: 1 1 100px;
+       
     }
     h2{
         text-align: center;
-        
     }
     .container-noticias{
         max-width: 100%;
-
     }
     .aniversario h2{
         width: 100%;
@@ -228,5 +214,20 @@ figure img {
         width: 100%;
         text-align: center;
     }
+    h2{
+        padding: 12px 0;
+    }
 }
 
+@media (max-width: 416px){
+    .aniversario > div{
+        flex-direction: column;
+    }
+    .split{
+        padding: 12px -4px 12px 4px;
+        text-align: center;
+    }
+    .aniversario figure{
+        text-align: center;
+    }
+}
