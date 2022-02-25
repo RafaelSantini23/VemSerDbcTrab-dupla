@@ -10,7 +10,7 @@ body{
     max-width: 1200px;
     display: flex;
     justify-content: space-around;
-    margin: 10px auto;
+    margin: 60px auto;
     background-color: #EFF3F8;
     
 }
@@ -96,10 +96,14 @@ aside div{
     background: linear-gradient(to bottom right, #295ba7, #78b454);
 }
 .aniversario{
+    width: 100%;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .aniversario div{
+    width: 100%;
     display: flex;
     background-color: #F8F9FA;
     border: none;
@@ -122,12 +126,12 @@ aside div{
 }
 .email{
     font-weight:400;
-    font-size: 90%;
+    
     margin-top: 5px;
 }
 .data{
     color: #6c757d!important;
-    font-size: 90%;
+    
     font-weight: 400px;
 }
 
