@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+body{
+    background-color: #EFF3F8;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #EFF3F8;
+    
+}
+.container-noticias div{
+    margin: 15px 2px;
+    /* background-color: #F8F9FA; */
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+}
+h2{
+    font-size: 12px;
+    background-color: #F8F9FA;
+    padding: 12px;
+    font-weight: normal;
+    margin: 0;
+    border-radius: 5px;
+    font-weight: 500;
+}
+aside{
+    margin-top: 15px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+aside div{
+    margin-bottom: 1px;
+    /* background-color: #F8F9FA; */
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+}
+.container-sistemas{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F8F9FA;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+
+
+}
+.container-sistemas div{
+    padding: 20px 15px;
+    /* flex: 1 1 60px; */
+    /* background-color: #fff; */
+    /* align-items: center; */
+    flex: 1 1 17%;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+.container-noticias{
+    max-width: 58%;
+    
+}
+.container-sistemas div p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #33A76F;
+}
+.container-sistemas div:last-child{
+    text-align: left;
+    max-width: 23%;
+}
+.container-sistemas i{
+    width: 100% !important;
+    text-align: center;
+    color: #33A76F;
+    font-size: 28px;
+    
+
+}
+.proc{
+    margin: 5px;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+}
+.a:hover { 
+    color: white !important;
+    background-color: green !important;
+    
+}
+
+.container-sistemas div:hover i, .container-sistemas div:hover p, .container-sistemas div:hover{
+    color: white !important;
+    cursor: pointer;
+}
+
+.container-sistemas div:hover{
+    background: linear-gradient(to bottom right, #295ba7, #78b454);
+}
+.aniversario{
+    border-radius: 5px;
+}
+
+.aniversario div{
+    display: flex;
+    background-color: #F8F9FA;
+    border: none;
+    
+}
+
+.split{
+    flex-direction: column;
+    box-shadow: none;
+    padding: 8px;
+   
+}
+
+.aniversario img{
+    border-radius: 25%;
+    padding: 10px;
+    max-width: 90px;
+}
+.nome{
+    font-weight: 500;
+    margin: 5px 0px;
+}
+.email{
+    font-weight:400;
+    font-size: 90%;
+    margin-top: 5px;
+}
+.data{
+    color: #6c757d!important;
+    font-size: 90%;
+    font-weight: 400px;
+}
