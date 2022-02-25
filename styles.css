@@ -10,13 +10,11 @@ body{
     max-width: 1200px;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto;
     background-color: #EFF3F8;
     
 }
-.container-noticias div{
-    margin: 15px 2px;
+.container-noticias, .noticias{
     /* background-color: #F8F9FA; */
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
@@ -30,7 +28,6 @@ h2{
     font-weight: 500;
 }
 aside{
-    margin-top: 15px;
     max-width: 40%;
     display: flex;
     flex-direction: column;
@@ -53,19 +50,16 @@ aside div{
 }
 .container-sistemas div{
     padding: 20px 15px;
-    /* flex: 1 1 60px; */
-    /* background-color: #fff; */
-    /* align-items: center; */
-    flex: 1 1 17%;
+    flex: 0 1 100px;
     display: block;
     justify-content: center;
-    flex-direction: column;
     border-radius: 5px;
     margin: 10px;
     
 }
 .container-noticias{
     max-width: 58%;
+    background-color: #F8F9FA;
     
 }
 .container-sistemas div p{
@@ -74,10 +68,7 @@ aside div{
     font-weight: bold;
     color: #33A76F;
 }
-.container-sistemas div:last-child{
-    text-align: left;
-    max-width: 23%;
-}
+
 .container-sistemas i{
     width: 100% !important;
     text-align: center;
@@ -112,14 +103,12 @@ aside div{
     display: flex;
     background-color: #F8F9FA;
     border: none;
-    
 }
 
 .split{
     flex-direction: column;
     box-shadow: none;
     padding: 8px;
-   
 }
 
 .aniversario img{
@@ -140,4 +129,62 @@ aside div{
     color: #6c757d!important;
     font-size: 90%;
     font-weight: 400px;
+}
+
+
+/* Container Noticias */
+
+.container-noticas .titulo {
+    margin-bottom: 80px;
+    /* background-color: #F8F9FA; */
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+}
+
+.noticias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 16px 8px;
+    
+}
+.noticias-card  {
+    display: flex;
+    padding: 15px 8px;
+    
+}
+
+figure img {
+  height: 100%;
+  border-radius: 0.25rem 0 0 0.25rem;  
+}
+
+.card-texto > h6 {
+    font-size: 1rem;
+    padding: 8px 0px 0px;
+    margin: 0px 0px 8px;
+}
+
+.heart {
+    color: #DC3545;
+}
+
+.card-reacts  {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px !important;
+}
+
+.card-reacts div {
+    display: flex;
+    align-items: center;
+    padding: 0px 4px 0px 0px;
+}
+
+.reacts i{
+    padding: 0px 4px 0px;
+}
+
+.text-muted {
+    color: #6c757d!important;
 }

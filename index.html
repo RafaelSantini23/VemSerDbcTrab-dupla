@@ -1,65 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ECOS</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
   <div class="container">
     <div class="container-noticias">
-      <div>
+      <div class="titulo">
         <h2>NOTÍCIAS RECENTES</h2>
       </div>
-      <div>
-        <img src="imagens/notícia1.png" alt="noticia dbc workshop">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia odio aspernatur architecto dolor nobis sint eum porro quidem totam deserunt.</p>
+      <hr>
+      <div class="noticias-card">
+        <figure>
+          <img src="./imagens/notícia1.png" alt="noticia dbc workshop" width="200px">
+        </figure>
+        <div class="noticias">
+          <div class="card-texto">
+            <h6> Workshop DBC Impact | Estamos de volta </h6>
+            <p>É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS (...</p>
+          </div>
+          <div class="card-reacts">
+              <p class="text-muted">04/02/2022</p>
+              <div class="reacts">
+                <div>
+                  <i class="fa-heart clr-pink far heart"></i>
+                  <span>15</span>
+                </div>
+                <div>
+                  <i class="text-muted fas fa-comments"></i>
+                  <span>2</span>
+                </div>
+                <div>
+                  <i class="text-muted fas fa-eye"></i>
+                  <span>58</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="noticias-card">
+        <figure>
+          <img src="./imagens/noticia2.png" alt="noticia dbc workshop" width="200px">
+        </figure>
+        <div class="noticias">
+          <div class="card-texto">
+            <h6> Deu a louca na indicação premiada especial! 😱 </h6>
+            <p>📣 ATENÇÃO ATENÇÃO ‼️ Deu a louca na companha de indicação premiada especial! 😱 👉 Agora todos podem ganhar! confira como participar: 1. Todas indicações contratadas levam o prêmio em dinheiro de acordo com o perfil. Confira: • Platinum – R$ 2.500: Data Engineer, Node e React • Silver – R$ 1.000: Testes...</p>
+          </div>
+          <div class="card-reacts">
+              <p class="text-muted">04/02/2022</p>
+              <div class="reacts">
+                <div>
+                  <i class="fa-heart clr-pink far heart"></i>
+                  <span>15</span>
+                </div>
+                <div>
+                  <i class="text-muted fas fa-comments"></i>
+                  <span>2</span>
+                </div>
+                <div>
+                  <i class="text-muted fas fa-eye"></i>
+                  <span>58</span>
+                </div>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
     <aside>
       <div>
         <h2>SISTEMAS E PROCESSOS</h2>
       </div>
-    <div class="container-sistemas">
-      <div class="proc">
-        <i class="fa-solid fa-users"></i>
-        <p>Contatos</p>
-      </div>
-      <div class="proc">
-        <i class="fas fa-clock"></i>
-        <p>Portal Metadados</p>
-      </div>
-      <div class="proc">
-        <i class="fas fa-brain"></i>
-        <p>BI - DBC</p>
-      </div>
-      <div class="proc">
-        <i class="fas fa-envelope"></i>
-        <p>Emails</p>
-      </div>
-      <div class="proc">
-        <i class="fas fa-tools"></i>
-        <p>CSC</p>
-      </div>
-      <div class="proc">
+      <div class="container-sistemas">
+        <div class="proc">
+          <i class="fa-solid fa-users"></i>
+          <p>Contatos</p>
+        </div>
+        <div class="proc">
+          <i class="fas fa-clock"></i>
+          <p>Portal Metadados</p>
+        </div>
+        <div class="proc">
+          <i class="fas fa-brain"></i>
+          <p>BI - DBC</p>
+        </div>
+        <div class="proc">
+          <i class="fas fa-envelope"></i>
+          <p>Emails</p>
+        </div>
+        <div class="proc">
+          <i class="fas fa-tools"></i>
+          <p>CSC</p>
+        </div>
+        <div class="proc">
           <i class="fas fa-folder-open"></i>
-          <p>Documentos</p>
-      </div>
-      <div class="proc">
-        <i class="fas fa-cloud"></i>
-        <p>File Cloud</p>
-      </div>
+          <p>Documentos DBC</p>
+        </div>
+        <div class="proc">
+          <i class="fas fa-cloud"></i>
+          <p>File Cloud</p>
+        </div>
       </div>
       <div class="aniversario">
         <div>
           <h2>Últimos aniversários</h2>
         </div>
         <div>
-          <img src="/VemSerDbcTrab-dupla/imagens/aniv.png" alt="usuario de aniversario">
+          <img src="imagens/aniv.png" alt="usuario de aniversario">
           <div class="split">
             <p class="nome">João da Silva</p>
             <p class="email">joaodasilva@dbccompany.com.br</p>
@@ -67,7 +124,7 @@
           </div>
         </div>
         <div>
-          <img src="/VemSerDbcTrab-dupla/imagens/aniv.png" alt="usuario de aniversario">
+          <img src="imagens/aniv.png" alt="usuario de aniversario">
           <div class="split">
             <p class="nome">Maria da Silva</p>
             <p class="email">mariadasilva@dbccompany.com.br</p>
@@ -76,8 +133,9 @@
         </div>
       </div>
     </aside>
-  
+
   </div>
- 
+
 </body>
+
 </html>
