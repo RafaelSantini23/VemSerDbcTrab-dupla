@@ -11,8 +11,8 @@ body{
     display: flex;
     justify-content: space-around;
     margin: 60px auto;
-    background-color: #EFF3F8;
-    
+    /* background-color: #EFF3F8; */
+
 }
 .container-noticias, .noticias{
     /* background-color: #F8F9FA; */
@@ -31,7 +31,7 @@ aside{
     max-width: 40%;
     display: flex;
     flex-direction: column;
-    
+
 }
 aside div{
     margin-bottom: 1px;
@@ -55,15 +55,15 @@ aside div{
     justify-content: center;
     border-radius: 5px;
     margin: 10px;
-    
+
 }
 .container-noticias{
     max-width: 58%;
     background-color: #F8F9FA;
-    
+
 }
 .container-sistemas div p{
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     font-weight: bold;
     color: #33A76F;
@@ -74,17 +74,17 @@ aside div{
     text-align: center;
     color: #33A76F;
     font-size: 28px;
-    
+
 
 }
 .proc{
     margin: 5px;
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
-.a:hover { 
+.a:hover {
     color: white !important;
     background-color: green !important;
-    
+
 }
 
 .container-sistemas div:hover i, .container-sistemas div:hover p, .container-sistemas div:hover{
@@ -126,21 +126,20 @@ aside div{
 }
 .email{
     font-weight:400;
-    
+
     margin-top: 5px;
 }
 .data{
     color: #6c757d!important;
-    
+
     font-weight: 400px;
 }
 
 
 /* Container Noticias */
 
-.container-noticas .titulo {
-    margin-bottom: 80px;
-    /* background-color: #F8F9FA; */
+.container-noticias .titulo {
+    margin-bottom: 1px;
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
 
@@ -150,17 +149,18 @@ aside div{
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 16px 8px;
-    
+
 }
+
 .noticias-card  {
     display: flex;
     padding: 15px 8px;
-    
+
 }
 
 figure img {
   height: 100%;
-  border-radius: 0.25rem 0 0 0.25rem;  
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .card-texto > h6 {
@@ -192,3 +192,41 @@ figure img {
 .text-muted {
     color: #6c757d!important;
 }
+
+/* Responsividade */
+
+@media (max-width: 930px){
+    .container{
+        flex-direction: column;
+        margin: 20px;
+    }
+    aside{
+        max-width: 100%;
+
+    }
+    .container-sistemas div{
+        flex: 1 1 100px;
+    }
+    h2{
+        text-align: center;
+        
+    }
+    .container-noticias{
+        max-width: 100%;
+
+    }
+    .aniversario h2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 601px){
+    .noticias-card{
+        flex-flow: row wrap;
+    } 
+    .noticias-card figure{
+        width: 100%;
+        text-align: center;
+    }
+}
+
