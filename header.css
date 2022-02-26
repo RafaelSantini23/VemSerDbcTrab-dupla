@@ -19,6 +19,8 @@ header {
   display: flex;
   align-items: center;
   color: white;
+  position: fixed;
+  top: 0px;
    
 }
 .nav-bar {
@@ -128,7 +130,7 @@ input:focus::-webkit-input-placeholder {
     top: 10px;
     right: 20px;
   }
-  
+ 
 
   .barra span {
     display: none;

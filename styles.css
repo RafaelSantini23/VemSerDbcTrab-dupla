@@ -3,6 +3,9 @@
     padding: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 }
+
+
+
 body{
     background-color: #EFF3F8;
 }
@@ -10,7 +13,7 @@ body{
     max-width: 1200px;
     display: flex;
     justify-content: space-around;
-    margin: 30px auto;
+    margin: 90px auto;
 }
 .container-noticias, .noticias{
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
@@ -101,13 +104,33 @@ aside div{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    overflow: overlay;
+    height: 490px;
 }
 
 .aniversario div{
     display: flex;
     background-color: #F8F9FA;
     border: none;
+    
 }
+
+.aniversario::-webkit-scrollbar{ 
+    width: 8px;
+    background-color: #F5F5F5;
+ }
+
+.aniversario::-webkit-scrollbar-track{ 
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    background-color: #F5F5F5; 
+}
+.aniversario::-webkit-scrollbar-thumb {      
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #bdbdbdc9 
+}
+
 
 .split{
     flex-direction: column;
@@ -170,6 +193,14 @@ figure img {
     color: #DC3545;
 }
 
+.heart {
+    cursor: pointer;
+}
+
+.heart:active {
+    color: red;
+}
+
 .card-reacts  {
     display: flex;
     justify-content: space-between;
@@ -190,20 +221,22 @@ figure img {
     color: #6c757d!important;
 }
 
-/* Responsividade */
 
+/* Responsividade */
+@media (max-width: 1177px) {
+    .container-sistemas div {
+        flex: 1 1 100px;
+    }
+}
 @media (max-width: 930px){
     .container{
         flex-direction: column;
-        margin: 20px;
+        margin: 90px 15px;
+        height: 100%;
     }
     aside{
         max-width: 100%;
         margin-top: 15px;
-    }
-    .container-sistemas div{
-        flex: 1 1 100px;
-       
     }
     h2{
         text-align: center;
